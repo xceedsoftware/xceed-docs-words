@@ -1,6 +1,6 @@
 # Licensing
 
-In order to use the controls provided by the Xceed Document Libraries in your application, the [LicenseKey](Xceed.Words.NET~Xceed.Words.NET.Licenser~LicenseKey.html) property of the [Licenser](Xceed.Words.NET~Xceed.Words.NET.Licenser.html) class must be set with a valid license key before any other method of the component is called. If you use an invalid or expired license key, fail to license the control altogether, or license it in the wrong place in your code, an exception will be thrown at runtime (see **License Exception** section below).
+In order to use the controls provided by the Xceed Document Libraries in your application, the LicenseKey property of the Licenser class must be set with a valid license key before any other method of the component is called. If you use an invalid or expired license key, fail to license the control altogether, or license it in the wrong place in your code, an exception will be thrown at runtime (see **License Exception** section below).
 
 A valid license key can be a registered license key, which is provided to you when you purchase the product(s), or a non-expired trial license key if you are evaluating the component.
 

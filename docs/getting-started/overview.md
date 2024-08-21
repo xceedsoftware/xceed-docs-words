@@ -1,4 +1,4 @@
-# Getting Started
+# Xceed Words for .NET v3.0 Documentation
 
 In this section of the documentation, you will find a variety of information and examples to help you get started using Xceed Words for .NET.
 

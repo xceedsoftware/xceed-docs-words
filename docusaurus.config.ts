@@ -68,7 +68,7 @@ const config: Config = {
     navbar: {
       title: 'Xceed Words for .NET',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Xceed Logo',
         src: 'img/xceed_logo.svg',
       },
       items: [
@@ -78,9 +78,8 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/xceedsoftware/Xceed-Words-Samples',
           label: 'GitHub',
           position: 'right',
         },{to: '/about', label: 'About', position: 'left'},
@@ -124,7 +123,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/xceedsoftware/Xceed-Words-Samples',
             },
           ],
         },
@@ -134,6 +133,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['csharp'],
     },
   } satisfies Preset.ThemeConfig,
 };

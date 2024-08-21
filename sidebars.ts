@@ -27,6 +27,123 @@ const sidebars: SidebarsConfig = {
       },
       items: ['getting-started/licensing','getting-started/deploying'],
     },
+    {
+      type: 'category',
+      label: 'Code Snippets',
+      link: {
+        type: 'doc',
+        id: 'code-snippets/overview',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Charts',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/charts/adding-chart',
+          },
+          items: [
+            'code-snippets/charts/adding-chart',
+            'code-snippets/charts/modifying-chart',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Documents',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/documents/appending-to-adocument',
+          },
+          items: [            
+            'code-snippets/documents/appending-to-adocument',
+            'code-snippets/documents/replacing-text-with-html',
+            'code-snippets/documents/replacing-text-with-objects',        
+            'code-snippets/documents/replacing-text',
+            'code-snippets/documents/converting-to-pdf',     
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Pictures',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/pictures/adding-picture',
+          },
+          items: [
+            'code-snippets/pictures/adding-picture',
+            'code-snippets/pictures/adding-picture-text-wrapping',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Shapes',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/shapes/adding-shapes',
+          },
+          items: [
+            'code-snippets/shapes/adding-shapes',
+            'code-snippets/shapes/adding-shapes-with-text-wrapping',
+            'code-snippets/shapes/adding-textboxes',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Sections',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/sections/inserting-sections',
+          },
+          items: [
+            'code-snippets/sections/inserting-sections',
+            'code-snippets/sections/modifying-sections',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Table of Contents',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/table-of-contents/inserting-table-of-content-at-beginning',
+          },
+          items: [
+            'code-snippets/table-of-contents/inserting-table-of-content-at-beginning',
+            'code-snippets/table-of-contents/inserting-table-of-content-at-end',
+            'code-snippets/table-of-contents/updating-table-contents',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Tables and Cells',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/tables-and-cells/creating-new-table-adding-to-document',
+          },
+          items: [
+            'code-snippets/tables-and-cells/creating-new-table-adding-to-document',
+            'code-snippets/tables-and-cells/creating-table-inserting-rows',
+            'code-snippets/tables-and-cells/adding-table-with-text-wrapping',
+            'code-snippets/tables-and-cells/adding-rows-and-columns-to-table',
+            'code-snippets/tables-and-cells/merging-cells-in-table',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Others',       // Nombre de la subcategoría
+          link: {
+            type: 'doc',
+            id: 'code-snippets/others/bookmarks',
+          },
+          items: [
+            'code-snippets/others/bookmarks',
+            'code-snippets/others/headers-and-footers',
+            'code-snippets/others/hyperlinks',        
+             'code-snippets/others/lists',                        
+             'code-snippets/others/paragraphs',
+          ],
+        }
+        ],
+    },
   ],
    
 };
