@@ -32,7 +32,7 @@ To use .NET 5+, you will also need 2 new DLLs, available on NuGet:
 
 You can also install all the necessary DLLs by installing the NuGet package `Xceed.Products.Documents.Libraries.Full`.
 
-When downloading the DLLs from NuGet, you will need to set the `licenseKey` in code. See the [Licensing](Licensing.html) topic for a code example.
+When downloading the DLLs from NuGet, you will need to set the `licenseKey` in code. See the [Licensing](getting-started/licensing) topic for a code example.
 
 If you do not have a license key, please e-mail us at [support@xceed.com](mailto:support@xceed.com), and we will be happy to provide you with a 15-day trial license key.
 
@@ -42,4 +42,4 @@ If you do not have a license key, please e-mail us at [support@xceed.com](mailto
 
 © Copyright Xceed Software Inc.
 
-[Send Feedback](mailto:support@xceed.com?subject=Documentation%20Feedback:%20rootWelcome.html)
+[Send Feedback](mailto:support@xceed.com)
