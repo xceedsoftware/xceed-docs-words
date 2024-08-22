@@ -2,7 +2,7 @@
 
 In this section of the documentation, you will find a variety of information and examples to help you get started using Xceed Words for .NET.
 
-> **Tip:** If something goes wrong, the first thing to verify is whether the **LicenseKey** property has been set to a valid license key. Refer to the [Licensing](licensing.md) topic for more information.
+> **Tip:** If something goes wrong, the first thing to verify is whether the **LicenseKey** property has been set to a valid license key. Refer to the [Licensing](licensing) topic for more information.
 
 ## Installing the Documentation
 
