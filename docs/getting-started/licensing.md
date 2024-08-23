@@ -8,7 +8,9 @@ A valid license key can be a registered license key, which is provided to you wh
 
 We recommend that you set the LicenseKey property in the main entry point of the application. For example, C# users can set the LicenseKey property in the static main function. VB.NET users can set the LicenseKey property in the constructor of the main form or in the "Sub Main" procedure.
 
+:::info
 *Note that the key begins with "WDN" for Words for .NET.*
+:::
 
 ### C#
 
@@ -33,6 +35,8 @@ End Sub
 
 If an invalid or expired license key is used, or if the **LicenseKey** property is omitted or set in the wrong place, an exception will be thrown at runtime. Depending on the Visual Studio exception debugging settings and the browser in which the application is run, the exception may be displayed in different ways.
 
-> **Tip:** If something goes wrong, the first thing to verify is whether the **LicenseKey** property has been set to a valid license key.
+:::tip
+If something goes wrong, the first thing to verify is whether the **LicenseKey** property has been set to a valid license key.
+:::
 
 ---

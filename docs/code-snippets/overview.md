@@ -2,9 +2,9 @@
 
 Throughout this section of the documentation, you will find fully functional code snippets that demonstrate a variety of features found in Xceed Words for .NET.
 :::info
-> More samples can be found when opening the example projects, available after running the Installer.  
-> The default example installation path is **"C:\Xceed Samples\Xceed Words for .NET v[Version number]\Src".**  
-> Open project "Xceed.Words.NET.Examples.csproj" or "Xceed.Words.NET5.Examples.csproj."
+More samples can be found when opening the example projects, available after running the Installer.  
+The default example installation path is **"C:\Xceed Samples\Xceed Words for .NET v[Version number]\Src".**  
+Open project "Xceed.Words.NET.Examples.csproj" or "Xceed.Words.NET5.Examples.csproj."
 :::
 
 ---

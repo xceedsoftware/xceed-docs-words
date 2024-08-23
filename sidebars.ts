@@ -39,8 +39,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Charts',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/charts/adding-chart',
+            type: 'generated-index',
+            description: 'Demonstrates how to add a Chart to a Document',            
           },
           items: [
             'code-snippets/charts/adding-chart',
@@ -51,8 +51,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Documents',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/documents/appending-to-adocument',
+            type: 'generated-index',
+            description: 'Demonstrates how to handle HTML, objects, text replacing and converting to pdf',  
           },
           items: [            
             'code-snippets/documents/appending-to-adocument',
@@ -66,8 +66,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Pictures',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/pictures/adding-picture',
+            type: 'generated-index',
+            description: 'Working with pictures in documents',  
           },
           items: [
             'code-snippets/pictures/adding-picture',
@@ -78,8 +78,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Shapes',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/shapes/adding-shapes',
+            type: 'generated-index',
+            description: 'Shapes in documents, as text wrapping and TextBoxes',  
           },
           items: [
             'code-snippets/shapes/adding-shapes',
@@ -91,8 +91,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Sections',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/sections/inserting-sections',
+            type: 'generated-index',
+            description: 'Manage sections in documents',  
           },
           items: [
             'code-snippets/sections/inserting-sections',
@@ -103,8 +103,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Table of Contents',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/table-of-contents/inserting-table-of-content-at-beginning',
+            type: 'generated-index',
+            description: 'Navigate yourself thorough the content',  
           },
           items: [
             'code-snippets/table-of-contents/inserting-table-of-content-at-beginning',
@@ -116,8 +116,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Tables and Cells',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/tables-and-cells/creating-new-table-adding-to-document',
+            type: 'generated-index',
+            description: 'Tables, cells, rows and more in a document',  
           },
           items: [
             'code-snippets/tables-and-cells/creating-new-table-adding-to-document',
@@ -131,8 +131,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Others',       // Nombre de la subcategoría
           link: {
-            type: 'doc',
-            id: 'code-snippets/others/bookmarks',
+            type: 'generated-index',
+            description: 'And we have more...',  
           },
           items: [
             'code-snippets/others/bookmarks',

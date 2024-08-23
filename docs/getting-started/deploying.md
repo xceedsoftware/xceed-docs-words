@@ -4,7 +4,9 @@ When distributing an application that uses Xceed's Words for .NET, specific asse
 
 Both signed and unsigned versions of the assemblies are available. Either version can be distributed, but please remember that signed software of any kind can sometimes cause problems because the .NET Framework or the operating system must contact an authentication server, which can in turn trigger firewall alerts, etc.
 
-> **Note:** Only the file(s) specifically identified in the documentation as Redistributable Files may be distributed. You may not redistribute the Xceed installation package.
+:::note
+Only the file(s) specifically identified in the documentation as Redistributable Files may be distributed. You may not redistribute the Xceed installation package.
+:::
 
 ## Installing Assemblies into the Global Assembly Cache
 
