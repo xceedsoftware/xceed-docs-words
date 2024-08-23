@@ -36,10 +36,6 @@ When downloading the DLLs from NuGet, you will need to set the `licenseKey` in c
 
 If you do not have a license key, please e-mail us at [support@xceed.com](mailto:support@xceed.com), and we will be happy to provide you with a 15-day trial license key.
 
-> **Note:** Conversion to PDF in .NET 5+ versions for Linux (Ubuntu) environments is not currently supported.
-
----
-
-© Copyright Xceed Software Inc.
-
-[Send Feedback](mailto:support@xceed.com)
+:::tip
+Conversion to PDF in .NET 5+ versions for Linux (Ubuntu) environments is not currently supported.
+:::

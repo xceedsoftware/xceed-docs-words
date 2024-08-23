@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/VargasrXceed/xceed-docs-words',
+            'https://github.com/vargasrxceed/xceed-docs-words',
         },
         blog: {
           showReadingTime: true,
@@ -49,7 +49,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/VargasrXceed/xceed-docs-words.git',
+            'https://github.com/vargasrxceed/xceed-docs-words.git',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -65,7 +65,13 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark', // o 'dark'
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
+      style: 'primary', // color del navbar,
       title: 'Xceed Words for .NET',
       logo: {
         alt: 'Xceed Logo',
@@ -87,47 +93,6 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/xceedsoftware/Xceed-Words-Samples',
-            },
-          ],
-        },
-      ],
       copyright: `All rights reserved 2020 - ${new Date().getFullYear()} © Xceed Software Inc.`,
     },
     prism: {

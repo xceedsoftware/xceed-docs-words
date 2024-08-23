@@ -8,34 +8,37 @@ type FeatureItem = {
   description: JSX.Element;
 };
 
+
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Complete control',
+    Svg: require('@site/static/img/word.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Lets your application create modify MS Word .docx documents. It gives you complete 
+        control over all content in a Word document, and lets you set all commonly used element 
+        types, such as paragraphs, bulleted or numbered lists, images, tables, charts, headers 
+        and footers, sections, bookmarks, and more.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'A great reporting tool',
+    Svg: require('@site/static/img/chart2.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Lets you create company reports that you first design with the familiar and rich 
+        editing capabilities of Microsoft Word instead of with a reporting tool’s custom editor. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '.NET Technology',
+    Svg: require('@site/static/img/dotnet_bot.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Object-oriented design created specifically for the .NET framework. Supports VB.NET, C#, and Managed C++.
+        Supports .NET Framework 4.0 and up, .NET 5.0 and up, ASP.NET 4.0 and up, Visual Studio 2010 and up.
       </>
     ),
   },
