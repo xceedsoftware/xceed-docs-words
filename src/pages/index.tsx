@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Manipulate Microsoft Word documents from your .NET applications <head />">
+      description="Manipulate Microsoft Word documents from your .NET applications">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
