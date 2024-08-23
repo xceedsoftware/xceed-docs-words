@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Xceed Words for .NET',
   tagline: 'Xceed Words for .NET documentation',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logox.ico',
 
   // Set the production url of your site here
   url: 'https://vargasrxceed.github.io',
@@ -64,7 +64,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/xceed_front.svg',
+    image: 'img/xceed_front.png',
     colorMode: {
       defaultMode: 'dark', // o 'dark'
       disableSwitch: false,
