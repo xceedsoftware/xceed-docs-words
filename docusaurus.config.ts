@@ -59,7 +59,18 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'workbooks',
+        path: 'workbooks',
+        routeBasePath: 'workbooks',
+        sidebarPath: './sidebarsWorkbooks.ts',
+        // ... other options
+      },
+    ],
+  ],
   themeConfig: {
     docs: {
       sidebar: {
@@ -76,7 +87,7 @@ const config: Config = {
     },
     navbar: {
       style: 'primary', // color del navbar,
-      title: 'Xceed Words for .NET',
+      title: 'Xceed documentation center',
       logo: {
         alt: 'Xceed Logo',
         src: 'img/xceed_logo.svg',
@@ -86,13 +97,15 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Words for .NET',
         },
         {
           href: 'https://github.com/xceedsoftware/Xceed-Words-Samples',
           label: 'GitHub',
           position: 'right',
-        },{to: '/about', label: 'About', position: 'left'},
+        },
+        { to: '/workbooks/intro', label:'Workbooks for .NET', position: 'left'},
+        {to: '/about', label: 'About', position: 'left'}, 
       ],
     },
     footer: {
