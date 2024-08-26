@@ -3,23 +3,6 @@
 This example demonstrates how to import arrays when using the API from the Xceed Workbooks for .NET.
 
 ```csharp 
-    private enum Team
-    {
-      Chicago_Hornets,
-      Miami_Ducks,
-      NewYork_Bucs,
-      LosAngelese_Raiders
-    }   
-
-    private class Player
-    {
-      public string Name { get; set; }
-
-      public int Number { get; set; }
-
-      public Team Team { get; set; }
-    }
-
     public static void ImportArrays()
     {
       using( var workbook = Workbook.Create( "ImportArrays.xlsx" ) )
@@ -84,4 +67,20 @@ This example demonstrates how to import arrays when using the API from the Xceed
       }
     }
 
+    private enum Team
+    {
+      Chicago_Hornets,
+      Miami_Ducks,
+      NewYork_Bucs,
+      LosAngelese_Raiders
+    }   
+
+    private class Player
+    {
+      public string Name { get; set; }
+
+      public int Number { get; set; }
+
+      public Team Team { get; set; }
+    }
 ```

@@ -37,6 +37,46 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'category',
+          label: 'Workbooks',       // Nombre de la subcategoría
+          link: {
+            type: 'generated-index',
+            description: 'And we have more...',  
+          },
+          items: [
+            'code-snippets/workbook/create-workbook',
+            'code-snippets/workbook/calculate-workbook-formulas',
+            'code-snippets/workbook/load-workbook-from-filename',        
+             'code-snippets/workbook/load-workbook-with-stream', 
+          ],
+        },{
+          type: 'category',
+          label: 'Worksheet',       // Nombre de la subcategoría
+          link: {
+            type: 'generated-index',
+            description: 'And we have more...',  
+          },
+          items: [
+            'code-snippets/worksheet/add-remove-hide-worksheet',
+            'code-snippets/worksheet/cell-row-column-access',
+            'code-snippets/worksheet/calculate-worksheet-formulas',        
+             'code-snippets/worksheet/insert-delete-rows',                        
+             'code-snippets/worksheet/insert-delete-columns',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Table',       // Nombre de la subcategoría
+          link: {
+            type: 'generated-index',
+            description: 'And we have more...',  
+          },
+          items: [
+            'code-snippets/table/add-formatted-table',
+            'code-snippets/table/remove-tables',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Annotations',       // Nombre de la subcategoría
           link: {
             type: 'generated-index',
@@ -162,45 +202,7 @@ const sidebars: SidebarsConfig = {
             'code-snippets/style/text-direction-orientation',        
              'code-snippets/style/modify-theme', 
           ],
-        },{
-          type: 'category',
-          label: 'Table',       // Nombre de la subcategoría
-          link: {
-            type: 'generated-index',
-            description: 'And we have more...',  
-          },
-          items: [
-            'code-snippets/table/add-formatted-table',
-            'code-snippets/table/remove-tables',
-          ],
-        },{
-          type: 'category',
-          label: 'Workbooks',       // Nombre de la subcategoría
-          link: {
-            type: 'generated-index',
-            description: 'And we have more...',  
-          },
-          items: [
-            'code-snippets/workbook/create-workbook',
-            'code-snippets/workbook/calculate-workbook-formulas',
-            'code-snippets/workbook/load-workbook-from-filename',        
-             'code-snippets/workbook/load-workbook-with-stream', 
-          ],
-        },{
-          type: 'category',
-          label: 'Worksheet',       // Nombre de la subcategoría
-          link: {
-            type: 'generated-index',
-            description: 'And we have more...',  
-          },
-          items: [
-            'code-snippets/worksheet/add-remove-hide-worksheet',
-            'code-snippets/worksheet/cell-row-column-access',
-            'code-snippets/worksheet/calculate-worksheet-formulas',        
-             'code-snippets/worksheet/insert-delete-rows',                        
-             'code-snippets/worksheet/insert-delete-columns',
-          ],
-        },
+        },        
         ],
     },
   ],

@@ -3,26 +3,9 @@
 This example demonstrates how to import datatables when using the API from the Xceed Workbooks for .NET.
 
 ```csharp 
-    private enum Team
-    {
-      Chicago_Hornets,
-      Miami_Ducks,
-      NewYork_Bucs,
-      LosAngelese_Raiders
-    }   
-
-    private class Player
-    {
-      public string Name { get; set; }
-
-      public int Number { get; set; }
-
-      public Team Team { get; set; }
-    }
-
     public static void ImportDataTables()
     {
-      using( var workbook = Workbook.Create( ImportDataSample.ImportDataSampleOutputDirectory + @"ImportDataTables.xlsx" ) )
+      using( var workbook = Workbook.Create( "ImportDataTables.xlsx" ) )
       {
         // Get the first worksheet. A workbook contains at least 1 worksheet.
         var worksheet = workbook.Worksheets[ 0 ];
@@ -63,5 +46,22 @@ This example demonstrates how to import datatables when using the API from the X
         workbook.Save();
         Console.WriteLine( "\tCreated: ImportDataTables.xslx\n" );
       }
+    }
+
+    private enum Team
+    {
+      Chicago_Hornets,
+      Miami_Ducks,
+      NewYork_Bucs,
+      LosAngelese_Raiders
+    }   
+
+    private class Player
+    {
+      public string Name { get; set; }
+
+      public int Number { get; set; }
+
+      public Team Team { get; set; }
     }
 ```

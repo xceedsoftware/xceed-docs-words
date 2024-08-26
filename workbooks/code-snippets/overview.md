@@ -9,6 +9,25 @@ Open project `Xceed.Workbooks.NET.Examples.csproj` or `Xceed.Workbooks.NET5.Exam
 :::
 
 ---
+## Workbooks
+
+- [Create workbook](workbook/create-workbook)
+- [Calculate workbook formulas](workbook/calculate-workbook-formulas)
+- [Load Workbook with filename](workbook/load-workbook-from-filename)
+- [Load Workbook with stream](workbook/load-workbook-with-stream)
+
+## Worksheet
+
+- [Add/remove/hide worksheet](worksheet/add-remove-hide-worksheet)
+- [Cells, columns and row access](worksheet/cell-row-column-access)
+- [Calculate worksheet formulas](worksheet/calculate-worksheet-formulas)
+- [Insert/delete rows](worksheet/insert-delete-rows)
+- [insert/delete columns](worksheet/insert-delete-columns)
+
+## Table
+
+- [Add formatted tables](table/add-formatted-table)
+- [Remove table](table/remove-tables)
 
 ## Annotations
 
@@ -76,23 +95,3 @@ Open project `Xceed.Workbooks.NET.Examples.csproj` or `Xceed.Workbooks.NET5.Exam
 - [Set Borders](style/set-borders)
 - [Text direction and orientation](style/text-direction-orientation)
 - [Modify theme](style/modify-theme)
-
-## Table
-
-- [Add formatted tables](table/add-formatted-table)
-- [Remove table](table/remove-tables)
-
-## Workbooks
-
-- [Create workbook](workbook/create-workbook)
-- [Calculate workbook formulas](workbook/calculate-workbook-formulas)
-- [Load workbook with filename](workbook/load-workbook-from-filename)
-- [Load Workbook with stream](workbook/load-workbook-with-stream)
-
-## Worksheet
-
-- [Add/remove/hide worksheet](worksheet/add-remove-hide-worksheet)
-- [Cells, columns and row access](worksheet/cell-row-column-access)
-- [Calculate worksheet formulas](worksheet/calculate-worksheet-formulas)
-- [Insert/delete rows](worksheet/insert-delete-rows)
-- [insert/delete columns](worksheet/insert-delete-columns)
