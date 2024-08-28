@@ -236,6 +236,53 @@ const sidebars: SidebarsConfig = {
             'code-snippets/other/encrypt-decrypt',   
           ],
         },
+        {
+          type: 'category',
+          label: 'Tar & GZip capabilities',
+          link: {
+            type: 'doc',
+            id: 'code-snippets/tar-gzip-capabilities/overview',  
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Creating and Writing',
+              link: {
+                type: 'generated-index',
+                description: 'This section contains code snippets relating to creating and writing tar archives and gzip files.',  
+              },
+              items: [
+                'code-snippets/tar-gzip-capabilities/creating-writing/copy-items-tar', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/copy-item-gzip', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/performing-multifile-gzip-operation', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/copy-item-tarbzip2', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/removing-item-from-tar', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/adding-item-tar-quicktar', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/removing-item-from-tar-quicktar', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/compressing-with-quickgzip', 
+                'code-snippets/tar-gzip-capabilities/creating-writing/removing-item-from-gzip-with-quickgzip', 
+              ],
+            },{
+              type: 'category',
+              label: 'Reading',
+              link: {
+                type: 'generated-index',
+                description: 'This section contains code snippets relating to reading tar archives and gzip files.',  
+              },
+              items: [
+                'code-snippets/tar-gzip-capabilities/reading/listing-tar-file',
+                'code-snippets/tar-gzip-capabilities/reading/performing-multifile-gzip-op',
+                'code-snippets/tar-gzip-capabilities/reading/extract-item-tar',
+                'code-snippets/tar-gzip-capabilities/reading/extract-item-gzip',
+                'code-snippets/tar-gzip-capabilities/reading/extract-tarbzip2',
+                'code-snippets/tar-gzip-capabilities/reading/extract-tar-quicktar',
+                'code-snippets/tar-gzip-capabilities/reading/listing-tar-quicktar',
+                'code-snippets/tar-gzip-capabilities/reading/uncompress-quickgzip',
+                'code-snippets/tar-gzip-capabilities/reading/list-gzipped-quickgzip',
+              ],
+            },
+          ],
+        },
       ],
     },
   ],
