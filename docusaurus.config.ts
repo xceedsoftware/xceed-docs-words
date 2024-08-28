@@ -70,6 +70,16 @@ const config: Config = {
         // ... other options
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'zip',
+        path: 'zip',
+        routeBasePath: 'zip',
+        sidebarPath: './sidebarzip.ts',
+        // ... other options
+      },
+    ],
   ],
   themeConfig: {
     docs: {
@@ -105,6 +115,7 @@ const config: Config = {
           position: 'right',
         },
         { to: '/workbooks/intro', label:'Workbooks for .NET', position: 'left'},
+        { to: '/zip/intro', label:'Zip for .NET', position: 'left'},
         {to: '/about', label: 'About', position: 'left'}, 
       ],
     },

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: About Workbooks for .NET
+title: Workbooks for .NET
 ---
 # Welcome to Xceed Workbooks for NET v1.4
 

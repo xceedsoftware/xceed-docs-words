@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: 'Words for .NET'
 ---
 # Welcome to Xceed Words for .NET v3.0
 
