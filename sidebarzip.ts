@@ -131,8 +131,8 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Code Snippets',
       link: {
-        type: 'doc',
-        id: 'code-snippets/overview',
+        type: 'generated-index',
+        description: 'This section contains task-based help relating to zipping and streaming.', 
       },      
       items: [
         {
@@ -241,8 +241,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Tar & GZip capabilities',
           link: {
-            type: 'doc',
-            id: 'code-snippets/tar-gzip-capabilities/overview',  
+            type: 'generated-index',
+            description: 'This section contains task-based help relating to tar and gzip.',  
           },
           items: [
             {

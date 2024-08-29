@@ -36,13 +36,13 @@ The Xceed.Zip.IAesAlgorithmManager interface exists only to allow the component 
 <Tabs>
   <TabItem value="csharp" label="C#" default>
     ```csharp
-public class AesManagedManager : IAesAlgorithmManager
-{
-  public SymmetricAlgorithm CreateAesAlgorithm()
-  {
-    return new System.Security.Cryptography.AesCryptoServiceProvider();
-  }
-}
+      public class AesManagedManager : IAesAlgorithmManager
+      {
+        public SymmetricAlgorithm CreateAesAlgorithm()
+        {
+          return new System.Security.Cryptography.AesCryptoServiceProvider();
+        }
+      }
     ```
   </TabItem>
   <TabItem value="vb.net" label="Visual Basic .NET">
@@ -62,13 +62,13 @@ Using a custom implementation of SymmetricAlgorithm is just as simple. The next 
 <Tabs>
   <TabItem value="csharp" label="C#" default>
     ```csharp
-public class AesCngManager : IAesAlgorithmManager
-{
-  public SymmetricAlgorithm CreateAesAlgorithm()
-  {
-    return new Security.Cryptography.AesCng();
-  }
-}
+    public class AesCngManager : IAesAlgorithmManager
+    {
+      public SymmetricAlgorithm CreateAesAlgorithm()
+      {
+        return new Security.Cryptography.AesCng();
+      }
+    }
     ```
   </TabItem>
   <TabItem value="vb.net" label="Visual Basic .NET">

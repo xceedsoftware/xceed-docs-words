@@ -24,68 +24,68 @@ The following example demonstrates how to decompress appended chunks of compress
 <Tabs>
   <TabItem value="csharp" label="C#" default>
     ```csharp
-using Xceed.Compression;
-using Xceed.FileSystem;
-using System.IO;
-using System.Net.Sockets;
+      using Xceed.Compression;
+      using Xceed.FileSystem;
+      using System.IO;
+      using System.Net.Sockets;
 
-using( TcpClient client = new TcpClient( "MyServer", 42 ) )
-{
-   // The returned stream does not close the connection when closed.
-   // It does not have ownership of the socket.
-   using( NetworkStream stream = client.GetStream() )
-   {
-      UncompressNextChunk( stream, new DiskFolder( @"d:\folder" ), 1 );
-   }
-}
-
-public static void UncompressNextChunk( Stream sourceStream,
-                                        DiskFolder destFolder,
-                                        int chunkCount )
-{
-   // We want to decompress the next chunk from the source stream.
-   using( CompressedStream compStream = new CompressedStream( sourceStream ) )
-   {
-      // But since we'll want to access the data following the compressed
-      // data in that source stream, we don't want the compressed stream to
-      // close it.
-      compStream.Transient = true;
-      DiskFile destFile = ( DiskFile )destFolder.GetFile( "Chunk" + chunkCount.ToString() + ".txt" ); 
-
-      if( !destFile.Exists )
-         destFile.Create(); 
-
-      bool endOfStream = true; 
-
-      using( Stream destStream = destFile.OpenWrite( true ) )
+      using( TcpClient client = new TcpClient( "MyServer", 42 ) )
       {
-         byte[] buffer = new byte[ 32768 ];
-         int read = 0; 
-
-         while( ( read = compStream.Read( buffer, 0, buffer.Length ) ) > 0 )
+         // The returned stream does not close the connection when closed.
+         // It does not have ownership of the socket.
+         using( NetworkStream stream = client.GetStream() )
          {
-            endOfStream = false;
-            destStream.Write( buffer, 0, read );
+            UncompressNextChunk( stream, new DiskFolder( @"d:\folder" ), 1 );
          }
       }
-  
-   // If we could not decompress anything at all, we consider this the
-      // real end of stream.
-      if( endOfStream )
-         return; 
 
-      // Before closing the compressed stream, we want to grab a stream on
-      // the rest of the data. We cannot simply take sourceStream, since the
-      // CompressedStream may have read more than the compressed data. And to
-      // avoid having too many resources "alive", we delay calling ourselves
-      // recursively after closing the compressed stream, though it would be
-      // perfectly valid to make the call right here.
-      sourceStream = compStream.GetRemainingStream();
-   } 
+      public static void UncompressNextChunk( Stream sourceStream,
+                                             DiskFolder destFolder,
+                                             int chunkCount )
+      {
+         // We want to decompress the next chunk from the source stream.
+         using( CompressedStream compStream = new CompressedStream( sourceStream ) )
+         {
+            // But since we'll want to access the data following the compressed
+            // data in that source stream, we don't want the compressed stream to
+            // close it.
+            compStream.Transient = true;
+            DiskFile destFile = ( DiskFile )destFolder.GetFile( "Chunk" + chunkCount.ToString() + ".txt" ); 
 
-   // We call ourselves recursively, with the stream returned by GetRemainingStream.
-   UncompressNextChunk( sourceStream, destFolder, chunkCount + 1 );
-}
+            if( !destFile.Exists )
+               destFile.Create(); 
+
+            bool endOfStream = true; 
+
+            using( Stream destStream = destFile.OpenWrite( true ) )
+            {
+               byte[] buffer = new byte[ 32768 ];
+               int read = 0; 
+
+               while( ( read = compStream.Read( buffer, 0, buffer.Length ) ) > 0 )
+               {
+                  endOfStream = false;
+                  destStream.Write( buffer, 0, read );
+               }
+            }
+      
+         // If we could not decompress anything at all, we consider this the
+            // real end of stream.
+            if( endOfStream )
+               return; 
+
+            // Before closing the compressed stream, we want to grab a stream on
+            // the rest of the data. We cannot simply take sourceStream, since the
+            // CompressedStream may have read more than the compressed data. And to
+            // avoid having too many resources "alive", we delay calling ourselves
+            // recursively after closing the compressed stream, though it would be
+            // perfectly valid to make the call right here.
+            sourceStream = compStream.GetRemainingStream();
+         } 
+
+         // We call ourselves recursively, with the stream returned by GetRemainingStream.
+         UncompressNextChunk( sourceStream, destFolder, chunkCount + 1 );
+      }
     ```
   </TabItem>
   <TabItem value="vb.net" label="Visual Basic .NET">

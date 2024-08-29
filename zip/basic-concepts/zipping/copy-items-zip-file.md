@@ -141,6 +141,6 @@ The main questions you should ask yourself when copying items to a zip file are:
 
 - Do you only want to do basic zip file operations? Use the [QuickZip](/zip/basic-concepts/quick-zip) class. 
 
-- Do you want to modify the default extra headers that are stored to a zip file? Set the ZipArchive's DefaultExtraHeaders property.
+- Do you want to modify the default extra headers that are stored to a zip file? Set the ZipArchive's `DefaultExtraHeaders` property.
 
-All zip files will automatically be created in the [Zip64 zip file format](/zip/basic-concepts/zip64-zip-file-format) if the limitations of the regular Zip format are reached.
+**All zip files will automatically be created in the [Zip64 zip file format](/zip/basic-concepts/zip64-zip-file-format) if the limitations of the regular Zip format are reached.**
