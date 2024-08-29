@@ -73,6 +73,7 @@ const sidebars: SidebarsConfig = {
            'basic-concepts/unzipping/handling-archives-with-directory',
           ],
         },
+        'basic-concepts/quick-zip',
         {
           type: 'category',
           label: 'Tar & GZip capabilities',
