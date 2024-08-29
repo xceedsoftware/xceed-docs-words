@@ -7,7 +7,7 @@ Xceed's implementation of AES encryption lets you incorporate industry standard 
 
 ## Encryption method
 
-The [EncryptionMethod](topic9414.html) enumeration provides the following values, representing the kind of encryption used:
+The `EncryptionMethod` enumeration provides the following values, representing the kind of encryption used:
 
 | Value        | Description                                                                                                                 |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------|
