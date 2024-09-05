@@ -80,6 +80,16 @@ const config: Config = {
         // ... other options
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ftp',
+        path: 'ftp',
+        routeBasePath: 'ftp',
+        sidebarPath: './sidebar_ftp.ts',
+        // ... other options
+      },
+    ],
   ],
   themeConfig: {
     docs: {
@@ -115,6 +125,7 @@ const config: Config = {
           position: 'right',
         },
         { to: '/workbooks/intro', label:'Workbooks for .NET', position: 'left'},
+        { to: '/ftp/intro', label:'Ftp for .NET', position: 'left'},
         { to: '/zip/intro', label:'Zip for .NET', position: 'left'},
         {to: '/about', label: 'About', position: 'left'}, 
       ],

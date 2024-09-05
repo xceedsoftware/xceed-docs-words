@@ -35,6 +35,7 @@ const sidebars: SidebarsConfig = {
         id: 'basic-concepts/getting-started',
       },
       items: [
+        'basic-concepts/zip-and-streaming-capabilities',
         'basic-concepts/introduction-zip-file-format',
         'basic-concepts/encryption-decription',
         'basic-concepts/listing-content-zip-file',
