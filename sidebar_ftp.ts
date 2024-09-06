@@ -156,6 +156,7 @@ const sidebars: SidebarsConfig = {
         id: 'code-snippets/overview',
       },
       items: [
+        'code-snippets/file-system-explorer',
         {
           type: 'category',
           label: 'Working with classes from the Xceed.FileSystem namespace',
