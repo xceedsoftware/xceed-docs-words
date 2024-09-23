@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Xceed Words for .NET',
-  tagline: 'Xceed Words for .NET documentation',
+  title: 'Xceed Libraries for .NET',
+  tagline: 'Xceed Libraries for .NET documentation',
   favicon: 'img/logox.ico',
 
   // Set the production url of your site here
@@ -66,7 +66,7 @@ const config: Config = {
         id: 'workbooks',
         path: 'workbooks',
         routeBasePath: 'workbooks',
-        sidebarPath: './sidebarsWorkbooks.ts',
+        sidebarPath: './sidebarsworkbooks.ts',
         // ... other options
       },
     ],
@@ -127,7 +127,7 @@ const config: Config = {
         { to: '/workbooks/intro', label:'Workbooks for .NET', position: 'left'},
         { to: '/ftp/intro', label:'Ftp for .NET', position: 'left'},
         { to: '/zip/intro', label:'Zip for .NET', position: 'left'},
-        {to: '/about', label: 'About', position: 'left'}, 
+        { to: '/about', label: 'About', position: 'left'}, 
       ],
     },
     footer: {
