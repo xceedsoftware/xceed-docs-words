@@ -11,12 +11,12 @@ const config: Config = {
   url: 'https://xceedsoftware.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/xceed-docs-libs/',
+  baseUrl: '/xceed-libs-doc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'xceedsoftware', // Usually your GitHub org/user name.
-  projectName: 'xceed-docs-libs', // Usually your repo name.
+  projectName: 'xceed-libs-doc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
