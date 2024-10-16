@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxceed_libs_doc=self.webpackChunkxceed_libs_doc||[]).push([[8137],{20195:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/xceed-libs-doc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

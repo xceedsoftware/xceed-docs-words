@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkxceed_docs_words=self.webpackChunkxceed_docs_words||[]).push([[5697],{93832:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"ftp"}')}}]);
