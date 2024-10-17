@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Adding files to a zip file (zipping)
 
-This topic demonstrates how to add files to a zip file using the static `Zip` method of the `QuickZip` class.
+This topic will demonstrates how to add files to a zip file using the static `Zip` method of the `QuickZip` class.
 
 ## Zip method
 
