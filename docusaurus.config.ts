@@ -17,10 +17,10 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'xceedsoftware', // Usually your GitHub org/user name.
   projectName: 'xceed-libs-doc', // Usually your repo name.
-
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
+  trailingSlash: false,
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
